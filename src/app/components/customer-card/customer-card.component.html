@@ -1,0 +1,23 @@
+<mat-card>
+  <div class="customer-card-container">
+    <mat-card-header>{{fullName}}</mat-card-header>
+    <mat-card-content>
+      <div>
+        <span class="label">Age:</span>
+         {{customer.age}}
+      </div>
+      <div>
+        <span class="label">Phone:</span>
+        {{customer.phone}}
+      </div>
+      <div>
+        <span class="label">Adderss:</span>
+        {{customer.address}}
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <a mat-raised-button color="accent" routerLink="../customers/{{customer.id}}">Edit</a>
+      <a mat-raised-button color="warn" (click)="onRemove(customer.id)">Remove</a>
+    </mat-card-actions>
+  </div>
+</mat-card>

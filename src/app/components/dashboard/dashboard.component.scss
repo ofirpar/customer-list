@@ -1,0 +1,11 @@
+#dashboard-container {
+  #customer-list {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .customer-card {
+      margin: 0px 10px;
+    }
+  }
+}

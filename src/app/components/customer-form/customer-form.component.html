@@ -1,0 +1,31 @@
+<div id="form-container">
+  <h4>{{isEdit ? 'Update' : 'Add'}} Customer</h4>
+  <div>
+    <form id="customer-form" (ngSubmit)="save()" [formGroup]="customerForm">
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="firstName">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastName">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>Age</mat-label>
+        <input type="number" matInput formControlName="age">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>Phone</mat-label>
+        <input matInput formControlName="phone">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="address">
+      </mat-form-field>
+      <div id="actions-container">
+        <a mat-raised-button color="warn" routerLink="~/dashboard">Cancel</a>
+        <button mat-raised-button color="primary" [disabled]="customerForm.invalid" (click)="save()">Save</button>
+      </div>
+    </form>
+  </div>
+</div>

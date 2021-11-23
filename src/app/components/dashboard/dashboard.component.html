@@ -1,0 +1,6 @@
+<div id="dashboard-container">
+  <h4>Dashboard</h4>
+  <div id="customer-list">
+    <app-customer-card *ngFor="let customer of customers$ | async" [customer]="customer" class="customer-card" (remove)="remove(customer)"></app-customer-card>
+  </div>
+</div>

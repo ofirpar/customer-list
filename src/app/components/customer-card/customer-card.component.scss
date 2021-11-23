@@ -1,0 +1,20 @@
+.customer-card-container {
+  width: 300px;
+  margin: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  mat-card-header {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  mat-card-content {
+    .label {
+      display: inline-block;
+      width: 80px;
+      margin: 5px;
+    }
+  }
+}

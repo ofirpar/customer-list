@@ -1,0 +1,21 @@
+#form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  #customer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border: 1px black solid;
+  }
+
+  #actions-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+}
